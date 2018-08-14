@@ -17,8 +17,8 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "node_modules/.bin/eslint ./src ./test --fix --max-warnings 0 --no-ignore",
+    "src/*.{js,jsx}": [
+      "node_modules/.bin/eslint ./src ./test --fix --max-warnings 0",
       "git add"
     ]
   },
